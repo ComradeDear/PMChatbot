@@ -22,12 +22,8 @@ async def help_me(bot, message):
     await bot.send_message(
         chat_id=Config.ADMIN,
         text=Presets.USER_DETAILS.format(
-            info.first_name,
-            info.last_name,
-            info.id, info.username,
-            info.is_scam,
-            info.is_restricted,
-            info.status,
-            info.dc_id
+          **  info.first_name,**
+           ** info.last_name,,**
+            **info.id, info.username,**
         )
     )
